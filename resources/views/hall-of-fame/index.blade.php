@@ -20,16 +20,4 @@
         {{-- More member cards will be added here --}}
     </div>
 </div>
-
-<style>
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-    }
-    
-    .members-grid {
-        margin-top: 2rem;
-    }
-</style>
 @endsection

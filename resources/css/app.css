@@ -6,6 +6,209 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'Kimberley', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    
+    /* School Brand Colors */
+    --color-brand-dark-green: #2C5234;
+    --color-brand-white: #FFFFFF;
+    --color-brand-silver-grey: #A2AAAD;
+}
+
+/* ===================================
+   DESIGN SPECIFICATIONS
+   =================================== 
+   
+   TARGET DISPLAY: Vertical Touchscreen (Portrait Orientation)
+   
+   Design Considerations:
+   - Primary orientation: Portrait (vertical)
+   - Touch-friendly interface (larger tap targets)
+   - Minimum touch target size: 44px x 44px
+   - Adequate spacing between interactive elements
+   - Clear visual feedback for touch interactions
+   - Optimized for standing/reading distance
+   
+   =================================== */
+
+/* ===================================
+   COMPONENT STYLES
+   Custom component styles organized by component type
+   =================================== */
+
+@layer components {
+    /* ============ Base Touch-Friendly Styles ============ */
+    * {
+        /* Disable text selection for touch interface */
+        -webkit-user-select: none;
+        user-select: none;
+        
+        /* Remove tap highlight for cleaner touch feedback */
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Re-enable text selection for readable content */
+    p, h1, h2, h3, h4, h5, h6, td, th, li {
+        -webkit-user-select: text;
+        user-select: text;
+    }
+    
+    /* ============ Navigation ============ */
+    nav {
+        background-color: var(--color-brand-dark-green);
+        @apply p-4;
+        /* Touch-friendly minimum height */
+        min-height: 60px;
+    }
+    
+    .nav-wrapper {
+        @apply max-w-7xl mx-auto flex justify-between items-center;
+    }
+    
+    .logo {
+        color: var(--color-brand-white);
+        @apply no-underline text-2xl font-bold;
+    }
+    
+    .nav-links {
+        @apply flex list-none gap-8 m-0 p-0;
+    }
+    
+    .nav-links a {
+        color: var(--color-brand-white);
+        @apply no-underline transition-colors;
+        /* Touch-friendly padding for minimum 44px touch target */
+        padding: 12px 16px;
+        display: inline-block;
+    }
+    
+    .nav-links a:hover {
+        color: var(--color-brand-silver-grey);
+    }
+    
+    /* ============ Footer ============ */
+    footer {
+        background-color: var(--color-brand-dark-green);
+        color: var(--color-brand-white);
+        @apply py-8 px-4 mt-16 text-center;
+    }
+    
+    footer .container {
+        @apply max-w-7xl mx-auto;
+    }
+    
+    /* ============ Member Card ============ */
+    .member-card {
+        border-color: var(--color-brand-silver-grey);
+        @apply border rounded-lg p-4 mb-4 flex gap-4;
+    }
+    
+    .member-image {
+        @apply w-[150px] h-[150px] object-cover rounded;
+    }
+    
+    .member-image-placeholder {
+        background-color: var(--color-brand-silver-grey);
+        @apply w-[150px] h-[150px] flex items-center justify-center rounded text-white;
+    }
+    
+    .member-info {
+        @apply flex-1;
+    }
+    
+    .member-info h3 {
+        color: var(--color-brand-dark-green);
+        @apply m-0 mb-2;
+    }
+    
+    .member-year,
+    .member-sport {
+        color: var(--color-brand-silver-grey);
+        @apply my-1;
+    }
+    
+    .member-description {
+        @apply mt-2;
+    }
+    
+    /* ============ Record Table ============ */
+    .record-table-container {
+        @apply mb-8;
+    }
+    
+    .record-table-container h2 {
+        color: var(--color-brand-dark-green);
+        @apply mb-4;
+    }
+    
+    .record-table {
+        @apply w-full border-collapse bg-white shadow-md;
+    }
+    
+    .record-table th,
+    .record-table td {
+        border-color: var(--color-brand-silver-grey);
+        @apply px-3 py-3 text-left border-b;
+    }
+    
+    .record-table th {
+        background-color: var(--color-brand-dark-green);
+        color: var(--color-brand-white);
+        @apply font-bold;
+    }
+    
+    .record-table tr:hover {
+        background-color: #f0f0f0;
+    }
+    
+    /* ============ Page Containers ============ */
+    .container {
+        @apply max-w-7xl mx-auto px-4 py-8;
+    }
+    
+    /* ============ Home Page ============ */
+    .hero {
+        @apply text-center py-12;
+    }
+    
+    .hero h1 {
+        color: var(--color-brand-dark-green);
+        @apply text-4xl mb-4;
+    }
+    
+    .quick-links {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12;
+    }
+    
+    .quick-link-card {
+        border-color: var(--color-brand-silver-grey);
+        @apply bg-white p-8 rounded-lg shadow-md no-underline text-inherit border transition-transform;
+        /* Touch-friendly minimum size */
+        min-height: 120px;
+        cursor: pointer;
+    }
+    
+    .quick-link-card:hover {
+        background-color: var(--color-brand-dark-green);
+        color: var(--color-brand-white);
+        @apply -translate-y-1 shadow-lg;
+    }
+    
+    .quick-link-card h2 {
+        @apply mb-2;
+    }
+    
+    /* ============ About Page ============ */
+    .about-content {
+        @apply mt-8 leading-relaxed;
+    }
+    
+    /* ============ Hall of Fame & Records Pages ============ */
+    .members-grid {
+        @apply mt-8;
+    }
+    
+    .records-section {
+        @apply mt-8;
+    }
 }

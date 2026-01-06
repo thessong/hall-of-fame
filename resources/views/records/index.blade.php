@@ -32,16 +32,4 @@
         {{-- More record tables for different sports will be added here --}}
     </div>
 </div>
-
-<style>
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-    }
-    
-    .records-section {
-        margin-top: 2rem;
-    }
-</style>
 @endsection

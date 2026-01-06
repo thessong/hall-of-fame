@@ -11,17 +11,4 @@
         <p>Students can customize this page with school history, mission statement, and other relevant information.</p>
     </div>
 </div>
-
-<style>
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-    }
-    
-    .about-content {
-        margin-top: 2rem;
-        line-height: 1.6;
-    }
-</style>
 @endsection
