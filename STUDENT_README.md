@@ -12,13 +12,13 @@ This Laravel project is the foundation for our school's Hall of Fame website. Th
 - Git installed on your computer
 - PHP 8.2 or higher
 - Composer (PHP package manager)
-- Node.js and npm
+- Node.js and npm (Download from https://nodejs.org/ - get the LTS version)
 
 ### Initial Setup
 
 1. **Clone the Repository**
    ```bash
-   git clone [REPOSITORY_URL_WILL_BE_PROVIDED]
+   git clone https://github.com/thessong/hall-of-fame.git
    cd hall-of-fame
    ```
 
