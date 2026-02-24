@@ -8,7 +8,10 @@
         <h1>Welcome to the Hall of Fame</h1>
         <p>Celebrating excellence and achievement</p>
     </div>
-    
+
+    <!-- Image carousel component -->
+    <x-image-carousel />
+
     <div class="quick-links">
         <a href="{{ route('hall-of-fame.index') }}" class="quick-link-card">
             <h2>Hall of Fame Members</h2>

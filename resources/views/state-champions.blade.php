@@ -1,0 +1,23 @@
+@extends('layouts.app')
+
+@section('title', 'Hall of Fame Members')
+
+@section('content')
+<div class="container">
+    <h1>Hall of Fame Members</h1>
+    
+    <div class="members-grid">
+        {{-- Example usage of the member-card component --}}
+        {{-- Students will replace this with dynamic data from a database --}}
+        
+        <x-member-card 
+            name="Example State Champion"
+            year="2020"
+            sport="Basketball"
+            description="This is an example state champion card. Replace with actual data from your database."
+        />
+        
+        {{-- More member cards will be added here --}}
+    </div>
+</div>
+@endsection

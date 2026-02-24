@@ -26,6 +26,11 @@
             .nav-links { display: flex; list-style: none; gap: 2rem; }
             .nav-links a { color: var(--color-brand-white); text-decoration: none; transition: color 0.2s; }
             .nav-links a:hover { color: var(--color-brand-silver-grey); }
+            /* Centered navigation and button-like links */
+            .nav-center { width: 100%; display: flex; justify-content: center; }
+            .nav-links { gap: 1rem; }
+            .nav-links a { background: var(--color-brand-white); color: var(--color-brand-dark-green); padding: 0.5rem 0.9rem; border-radius: 8px; font-weight: 600; box-shadow: 0 1px 0 rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06); transition: transform 0.12s, background-color 0.12s, color 0.12s; }
+            .nav-links a:hover { background: var(--color-brand-silver-grey); color: var(--color-brand-white); transform: translateY(-2px); }
             
             /* Footer */
             footer { background-color: var(--color-brand-dark-green); color: var(--color-brand-white); padding: 2rem 1rem; margin-top: 4rem; text-align: center; }
@@ -68,18 +73,25 @@
             .about-content { margin-top: 2rem; line-height: 1.6; }
             
             h1 { color: var(--color-brand-dark-green); font-size: 2rem; margin-bottom: 1rem; }
+            /* Site banner (fixed across top) */
+            .site-banner { position: fixed; top: 0; left: 0; width: 100%; height: clamp(80px, 12vh, 160px); z-index: 60; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+            .site-banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+            .has-banner { padding-top: clamp(80px, 12vh, 160px); }
         </style>
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
 </head>
-<body class="antialiased">
-    <x-navigation />
-    
+<body class="antialiased has-banner">
+    <header class="site-banner">
+        <img src="{{ asset('images/banner.jpg') }}" alt="Site banner">
+    </header>
     <main>
         @yield('content')
     </main>
-    
-    <x-footer />
+
+    <x-navigation />
+
+
 </body>
 </html>

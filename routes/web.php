@@ -12,6 +12,11 @@ Route::get('/hall-of-fame', function () {
     return view('hall-of-fame.index');
 })->name('hall-of-fame.index');
 
+// Hall of Fame pages
+Route::get('/state-champions', function () {
+    return view('state-champions');
+})->name('state-champions');
+
 // Record boards pages
 Route::get('/records', function () {
     return view('records.index');
