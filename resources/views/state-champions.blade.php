@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Hall of Fame Members')
+@section('title', 'State Champions')
 
 @section('content')
 <div class="container">
-    <h1>Hall of Fame Members</h1>
+    <h1>State Champions</h1>
     
     <div class="members-grid">
-        {{-- Example usage of the member-card component --}}
+        {{-- Example usage of the state-card component --}}
         {{-- Students will replace this with dynamic data from a database --}}
         
-        <x-member-card 
+        <x-state-card 
             name="Example State Champion"
             year="2020"
             sport="Basketball"

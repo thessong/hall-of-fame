@@ -16,8 +16,8 @@
                 --color-brand-silver-grey: #A2AAAD;
             }
             
-            * { margin: 0; padding: 0; box-sizing: border-box; }
-            body { font-family: 'Instrument Sans', system-ui, sans-serif; line-height: 1.6; color: #333; }
+            * { margin: 0; padding: 0; box-sizing: border-box; }            
+            body { font-family: 'Instrument Sans', system-ui, sans-serif; line-height: 1.6; color: #333; margin: 0 auto; background-color: #f8f9fa; aspect-ratio: 9 / 16; }
             
             /* Navigation */
             nav { background-color: var(--color-brand-dark-green); padding: 1rem; }
@@ -29,7 +29,7 @@
             /* Centered navigation and button-like links */
             .nav-center { width: 100%; display: flex; justify-content: center; }
             .nav-links { gap: 1rem; }
-            .nav-links a { background: var(--color-brand-white); color: var(--color-brand-dark-green); padding: 0.5rem 0.9rem; border-radius: 8px; font-weight: 600; box-shadow: 0 1px 0 rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06); transition: transform 0.12s, background-color 0.12s, color 0.12s; }
+            .nav-links a { background: var(--color-brand-white); color: var(--color-brand-dark-green); font-size: 25px; text: center; padding: 0.5rem 0.9rem; border-radius: 8px; font-weight: 600; box-shadow: 0 1px 0 rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06); transition: transform 0.12s, background-color 0.12s, color 0.12s; display: inline-block; width: 200px; height: 100px; align-items: center; justify-content: center; text-align: center; display: flex; }
             .nav-links a:hover { background: var(--color-brand-silver-grey); color: var(--color-brand-white); transform: translateY(-2px); }
             
             /* Footer */
@@ -74,7 +74,7 @@
             
             h1 { color: var(--color-brand-dark-green); font-size: 2rem; margin-bottom: 1rem; }
             /* Site banner (fixed across top) */
-            .site-banner { position: fixed; top: 0; left: 0; width: 100%; height: clamp(80px, 12vh, 160px); z-index: 60; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+            .site-banner { position: fixed; top: 0; left: 0; width: 100%; height:  z-index: 60; overflow: hidden; display: flex; align-items: center; justify-content: center; }
             .site-banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
             .has-banner { padding-top: clamp(80px, 12vh, 160px); }
         </style>

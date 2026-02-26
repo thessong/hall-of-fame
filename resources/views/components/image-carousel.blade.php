@@ -16,7 +16,7 @@
 
 <script>
     (function(){
-        const bottomRightImages = [/*
+        const bottomRightImages = [
             "CopyofBand.png",
             "CopyofBasketball.Boys.png",
             "CopyofBasketball.Girls.png",
@@ -41,9 +41,9 @@
             "CopyofVolleyball.png",
             "GirlsBBLogo.png",
             "WrestlingLogo.jpg" 
-        */];
+        ];
 
-        const bottomLeftImages = [ /*
+        const bottomLeftImages = [ 
             "1M1A5988.JPG",
             "2018-19BoysBballVarsity.JV.jpg",
             "2018-19BoysSwimTeam.jpg",
@@ -67,9 +67,9 @@
             "2019-20GirlsBowling.jpg",
             "2019-20TeamPhoto.jpg",
             "2019-20WrestlingTeamPhoto.jpg"
-        */];
+        ];
 
-        const topRightImages = [ /*
+        const topRightImages = [ 
             "1975DavidCaldwell120Hurdles.jpg",
             "1987Girls4x400mRelay.jpg",
             "1988Girls4x400mRelay.jpg",
@@ -110,9 +110,9 @@
             "2016TravisHodge800mRun.jpg",
             "2018ScholarsBowl.JPG",
             "2021Boys4x100mRelay.jpg"
-        */];
+        ];
 
-        const topLeftImages = [ /*
+        const topLeftImages = [ 
             "1916EveningStar1916.jpg",
             "1M1A3423.JPG",
             "1M1A3459.JPG",
@@ -215,7 +215,7 @@
             "YearbookDrama.jpg",
             "YearbookImages.jpg",
             "YearbookPic.jpg"
-        */];
+        ];
 
         const slots = Array.from(document.querySelectorAll('.grid-slot img'));
         if (!slots.length || slots.length < 4) return;
