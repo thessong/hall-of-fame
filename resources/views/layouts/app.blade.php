@@ -49,6 +49,12 @@
             .quick-link-card:hover { background-color: var(--color-brand-dark-green); color: var(--color-brand-white); transform: translateY(-4px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
             .quick-link-card h2 { margin-bottom: 0.5rem; }
             
+            /* Records Links */
+            .records-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+            .records-link-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border: 1px solid var(--color-brand-silver-grey); transition: all 0.2s; align-items: center; justify-content: center; text-align: center; display: flex;}
+            .records-link-card:hover { background-color: var(--color-brand-dark-green); color: var(--color-brand-white); transform: translateY(-4px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+            .records-link-card h2 { margin-bottom: 0.5rem; }
+            
             /* Member Card */
             .member-card { border: 1px solid var(--color-brand-silver-grey); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; display: flex; gap: 1rem; }
             .member-image { width: 150px; height: 150px; object-fit: cover; border-radius: 4px; }

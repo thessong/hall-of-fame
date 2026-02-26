@@ -4,7 +4,70 @@
 
 @section('content')
 <div class="container">
-    <h1>Athletic Record Boards</h1>
+
+<h1>Record Boards</h1>
+<h2>Fall Sports</h2>
+
+<div class="records-links">
+        <a href="{{ route('hall-of-fame.index') }}" class="records-link-card">
+            <h2>Football</h2>
+        </a>
+        
+        <a href="{{ route('records.index') }}" class="records-link-card">
+            <h2>Soccer - Boys</h2>
+        </a>
+        
+        <a href="{{ route('about') }}" class="records-link-card">
+            <h2>Volleyball</h2>
+        </a>
+    </div>
+
+    <h2>Winter Sports</h2>
+
+<div class="records-links">
+        <a href="{{ route('hall-of-fame.index') }}" class="records-link-card">
+            <h2>Basketball - Boys</h2>
+        </a>
+        
+        <a href="{{ route('records.index') }}" class="records-link-card">
+            <h2>Basketball - Girls</h2>
+        </a>
+        
+        <a href="{{ route('about') }}" class="records-link-card">
+            <h2>Bowling</h2>
+        </a>
+        <a href="{{ route('about') }}" class="records-link-card">
+            <h2>Swimming</h2>
+        </a>
+        <a href="{{ route('about') }}" class="records-link-card">
+            <h2>Wrestling</h2>
+        </a>
+        <a href="{{ route('about') }}" class="records-link-card">
+            <h2>Scholars Bowl</h2>
+        </a>
+    </div>
+
+        <h2>Spring Sports</h2>
+
+<div class="records-links">
+        <a href="{{ route('hall-of-fame.index') }}" class="records-link-card">
+            <h2>Baseball</h2>
+        </a>
+        
+        <a href="{{ route('records.index') }}" class="records-link-card">
+            <h2>Golf - Boys</h2>
+        </a>
+        
+        <a href="{{ route('about') }}" class="records-link-card">
+            <h2>Soccer - Girls</h2>
+        </a>
+        <a href="{{ route('about') }}" class="records-link-card">
+            <h2>Softball</h2>
+        </a>
+        <a href="{{ route('about') }}" class="records-link-card">
+            <h2>Track</h2>
+        </a>
+    </div>
     
     <div class="records-section">
         {{-- Example usage of the record-table component --}}
