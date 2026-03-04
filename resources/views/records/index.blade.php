@@ -9,15 +9,15 @@
 <h2>Fall Sports</h2>
 
 <div class="records-links">
-        <a href="{{ route('hall-of-fame.index') }}" class="records-link-card">
+        <a href="{{ route('football') }}" class="records-link-card">
             <h2>Football</h2>
         </a>
         
-        <a href="{{ route('records.index') }}" class="records-link-card">
+        <a href="{{ route('soccer-boys') }}" class="records-link-card">
             <h2>Soccer - Boys</h2>
         </a>
         
-        <a href="{{ route('about') }}" class="records-link-card">
+        <a href="{{ route('volleyball') }}" class="records-link-card">
             <h2>Volleyball</h2>
         </a>
     </div>
@@ -68,30 +68,16 @@
             <h2>Track</h2>
         </a>
     </div>
-    
-    <div class="records-section">
-        {{-- Example usage of the record-table component --}}
-        {{-- Students will replace this with dynamic data from a database --}}
-        
-        @php
-        $exampleRecords = [
-            [
-                'event' => '100m Dash',
-                'record' => '10.5 seconds',
-                'holder' => 'John Doe',
-                'year' => '2019'
-            ],
-            [
-                'event' => '200m Dash',
-                'record' => '21.2 seconds',
-                'holder' => 'Jane Smith',
-                'year' => '2020'
-            ]
-        ];
+
+        <h2>All Sports</h2>
+
+    <div class="records-links">
+        <a href="{{ route('hall-of-fame.index') }}" class="records-link-card">
+            <h2>All sports</h2>
+        </a>
+    </div>
         @endphp
-        
-        <x-record-table sport="Track & Field" :records="$exampleRecords" />
-        
+                
         {{-- More record tables for different sports will be added here --}}
     </div>
 </div>

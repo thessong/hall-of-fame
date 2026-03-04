@@ -54,7 +54,7 @@
             /* Centered navigation and button-like links */
             .nav-center { width: 100%; display: flex; justify-content: center; }
             .nav-links { gap: 1rem; }
-            .nav-links a { background: var(--color-brand-white); color: var(--color-brand-dark-green); font-size: 25px; text: center; padding: 0.5rem 0.9rem; border-radius: 8px; font-weight: 600; box-shadow: 0 1px 0 rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06); transition: transform 0.12s, background-color 0.12s, color 0.12s; display: inline-block; width: 200px; height: 100px; align-items: center; justify-content: center; text-align: center; display: flex; }
+            .nav-links a { background: var(--color-brand-white); color: var(--color-brand-dark-green); font-size: 25px; text: center; padding: 0.5rem 0.9rem; border-radius: 8px; font-weight: 600; box-shadow: 0 1px 0 rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.06); transition: transform 0.12s, background-color 0.12s, color 0.12s; display: inline-block; width: 175px; height: 100px; align-items: center; justify-content: center; text-align: center; display: flex; }
             .nav-links a:hover { background: var(--color-brand-silver-grey); color: var(--color-brand-white); transform: translateY(-2px); }
             
             /* Footer */
@@ -91,10 +91,11 @@
             
             /* Records Links - 3 columns per row */
             .records-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1rem; margin-bottom: 2rem; }
-            .records-link-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border: 1px solid var(--color-brand-silver-grey); transition: all 0.2s; align-items: center; justify-content: center; text-align: center; display: flex;}
+            .records-link-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border: 1px solid var(--color-brand-silver-grey); transition: all 0.2s; align-items: center; justify-content: center; text-align: center; display: flex; }
             .records-link-card:hover { background-color: var(--color-brand-dark-green); color: var(--color-brand-white); transform: translateY(-4px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
             .records-link-card h2 { margin-bottom: 0.5rem; }
-            
+
+
             /* Member Card */
             .member-card { border: 1px solid var(--color-brand-silver-grey); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; display: flex; gap: 1rem; }
             .member-image { width: 150px; height: 150px; object-fit: cover; border-radius: 4px; }
