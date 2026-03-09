@@ -25,11 +25,11 @@
     <h2>Winter Sports</h2>
 
 <div class="records-links">
-        <a href="{{ route('hall-of-fame.index') }}" class="records-link-card">
+        <a href="{{ route('basketball-boys') }}" class="records-link-card">
             <h2>Basketball - Boys</h2>
         </a>
         
-        <a href="{{ route('records.index') }}" class="records-link-card">
+        <a href="{{ route('basketball-girls') }}" class="records-link-card">
             <h2>Basketball - Girls</h2>
         </a>
         

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RecordController;
 use Illuminate\Support\Facades\Route;
 
 // Home page
@@ -36,9 +37,7 @@ Route::get('/records/volleyball', function () {
 })->name('volleyball');
 
 //Record board categories Winter
-Route::get('/records/basketball-boys', function () {
-    return view('records.basketball-boys');
-})->name('basketball-boys');
+Route::get('/records/basketball-boys', [RecordController::class, 'boysBasketball'])->name('basketball-boys');
 
 Route::get('/records/basketball-girls', function () {
     return view('records.basketball-girls');

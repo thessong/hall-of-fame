@@ -19,8 +19,7 @@
             * { margin: 0; padding: 0; box-sizing: border-box; }
             
             html {
-                height: 1750px;
-                max-height: 1750px;
+                height: 100vh;
                 overflow: hidden;
             }
             
@@ -30,8 +29,7 @@
                 color: #333; 
                 margin: 0 auto; 
                 background-color: #f8f9fa; 
-                height: 1750px;
-                max-height: 1750px;
+                height: 100vh;
                 overflow: hidden;
                 width: 100%;
                 display: flex;
@@ -66,17 +64,19 @@
                 max-width: 1200px; 
                 margin: 0 auto; 
                 padding: 2rem 1rem;
-                max-height: 100%;
-                overflow: hidden;
+                height: 100%;
+                overflow: visible;
             }
             
-            /* Main content area with fixed height */
+            /* Main content area - scrollable between fixed header and footer */
             main {
                 flex: 1;
-                overflow: hidden;
+                overflow-y: auto;
+                overflow-x: auto;
                 display: flex;
                 flex-direction: column;
                 min-height: 0;
+                align-items: center;
             }
             
             /* Hero */

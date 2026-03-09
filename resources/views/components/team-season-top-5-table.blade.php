@@ -1,24 +1,24 @@
-@props(['sport', 'records' => []])
+@props(['title', 'records' => []])
 
 <div class="record-table-container">
-    <h2>{{ $sport }} Records</h2>
+    <h3>{{ $title }}</h3>
     
     <table class="record-table">
         <thead>
             <tr>
-                <th>Event/Category</th>
+                <th>Rank</th>
+                <th>Total</th>
+                <th>Season</th>
                 <th>Record</th>
-                <th>Holder</th>
-                <th>Year</th>
             </tr>
         </thead>
         <tbody>
             @forelse($records as $record)
                 <tr>
-                    <td>{{ $record['event'] ?? '' }}</td>
-                    <td>{{ $record['record'] ?? '' }}</td>
-                    <td>{{ $record['holder'] ?? '' }}</td>
-                    <td>{{ $record['year'] ?? '' }}</td>
+                    <td>{{ $record->rank ?? '' }}</td>
+                    <td>{{ $record->total ?? '' }}</td>
+                    <td>{{ $record->season ?? '' }}</td>
+                    <td>{{ $record->record ?? 'N/A' }}</td>
                 </tr>
             @empty
                 <tr>
