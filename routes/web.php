@@ -39,9 +39,7 @@ Route::get('/records/volleyball', function () {
 //Record board categories Winter
 Route::get('/records/basketball-boys', [RecordController::class, 'boysBasketball'])->name('basketball-boys');
 
-Route::get('/records/basketball-girls', function () {
-    return view('records.basketball-girls');
-})->name('basketball-girls');
+Route::get('/records/basketball-girls', [RecordController::class, 'girlsBasketball'])->name('basketball-girls');
 
 Route::get('/records/bowling', function () {
     return view('records.bowling');

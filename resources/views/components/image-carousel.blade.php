@@ -2,7 +2,7 @@
 <div class="grid-carousel" aria-label="Featured images"> 
     <div class="grid-slot"><a href="{{ route('hall-of-fame.index') }}"><img data-slot="0" src="{{ asset('images/topLeft/1916EveningStar1916.jpg') }}" alt="Featured 1"></a></div>
     <div class="grid-slot"><a href="{{ route('records.index') }}"><img data-slot="1" src="{{ asset('images/topRight/1975DavidCaldwell120Hurdles.jpg') }}" alt="Featured 2"></a></div>
-    <div class="grid-slot"><a href="{{ route('about') }}"><img data-slot="2" src="{{ asset('images/bottomLeft/1M1A5988.JPG') }}" alt="Featured 3"></a></div>
+    <div class="grid-slot"><a href="{{ route('state-champions') }}"><img data-slot="2" src="{{ asset('images/bottomLeft/1M1A5988.JPG') }}" alt="Featured 3"></a></div>
     <div class="grid-slot"><a href="{{ route('about') }}"><img data-slot="3" src="{{ asset('images/bottomRight/CopyofBand.png') }}" alt="Featured 4"></a></div>
 </div>
 
